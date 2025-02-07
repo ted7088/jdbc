@@ -69,7 +69,7 @@ public class ExTranslatorV1Test {
                 pstmt.executeUpdate();
                 return member;
             } catch (SQLException e) {
-//h2 db
+                //h2 db
                 if (e.getErrorCode() == 23505) {
                     throw new MyDuplicateKeyException(e);
                 }
